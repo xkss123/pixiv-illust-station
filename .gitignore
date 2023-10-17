@@ -1,0 +1,3 @@
+# 忽略unpackage和node_modules
+/unpackage/
+/node_modules/
