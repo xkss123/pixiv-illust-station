@@ -30,6 +30,11 @@
 				})
 				uni.navigateBack()
 			}
+		},
+		watch:{
+			username(){
+				console.log(this.username);
+			}
 		}
 	}
 </script>

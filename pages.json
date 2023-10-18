@@ -32,7 +32,8 @@
             "style" :                                                                                    
             {
                 "navigationBarTitleText": "我的",
-                "enablePullDownRefresh": false
+                "enablePullDownRefresh": false,
+				"navigationStyle":"default"
             }
             
         }
@@ -41,8 +42,7 @@
             "style" :                                                                                    
             {
                 "navigationBarTitleText": "",
-                "enablePullDownRefresh": false,
-				"navigationStyle":"custom"
+                "enablePullDownRefresh": false
             }
             
         }
@@ -51,7 +51,48 @@
             "style" :                                                                                    
             {
                 "navigationBarTitleText": "个人中心",
-                "enablePullDownRefresh": false
+                "enablePullDownRefresh": false,
+				"navigationStyle": "default"
+            }
+            
+        }
+        ,{
+            "path" : "pages/user/favorite/favorite",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "我的收藏",
+                "enablePullDownRefresh": false,
+				"navigationStyle": "default"
+            }
+            
+        }
+        ,{
+            "path" : "pages/user/userAgree/userAgree",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "用户协议",
+                "enablePullDownRefresh": false,
+				"navigationStyle": "default"
+            }
+            
+        }
+        ,{
+            "path" : "pages/user/aboutUs/aboutUs",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "关于我们",
+                "enablePullDownRefresh": false,
+				"navigationStyle": "default"
+            }
+            
+        }
+        ,{
+            "path" : "pages/user/contactUs/contactUs",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "联系我们",
+                "enablePullDownRefresh": false,
+				"navigationStyle": "default"
             }
             
         }
@@ -59,7 +100,7 @@
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
+		"navigationBarBackgroundColor": "#0396FA",
 		"backgroundColor": "#F8F8F8",
 		"app-plus":{
 			"scrollIndicator":"none" //全局 在APP页面都不显示滚动条

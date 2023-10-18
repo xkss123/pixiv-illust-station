@@ -6,6 +6,34 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "14046411",
+      "name": "右箭头",
+      "font_class": "youjiantou",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    },
+    {
+      "icon_id": "817824",
+      "name": "用户协议",
+      "font_class": "yonghuxieyi",
+      "unicode": "e657",
+      "unicode_decimal": 58967
+    },
+    {
+      "icon_id": "4735599",
+      "name": "退出登录",
+      "font_class": "tuichudenglu",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "29160140",
+      "name": "qq",
+      "font_class": "qq",
+      "unicode": "ea98",
+      "unicode_decimal": 60056
+    },
+    {
       "icon_id": "3629563",
       "name": "收 藏 (已收藏)",
       "font_class": "shoucangyishoucang",

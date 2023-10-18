@@ -5,11 +5,11 @@ const state = {
 	isActive:false
 };
 const mutations = {
-	GETFAVORITELIST(state,id) {
+	GETFAVORITELIST(state,id=-1) {
 		uni.getStorage({
 			key: 'favoriteList',
 			success(res) {
-				console.log('我是detail',JSON.parse(res.data));
+				console.log(JSON.parse(res.data));
 				state.favoriteList = JSON.parse(res.data)
 			},
 			fail(err) {

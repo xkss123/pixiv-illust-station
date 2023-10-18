@@ -1,6 +1,6 @@
 <template>
 	<view>
-		<!-- #ifdef APP-PLUS || MP-WEIXIN -->
+		<!-- #ifdef APP-PLUS -->
 		<StatusBar></StatusBar>
 		<!-- #endif -->
 		<!-- #ifdef APP-PLUS || H5-->

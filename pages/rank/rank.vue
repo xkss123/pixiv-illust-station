@@ -1,5 +1,8 @@
 <template>
 	<view>
+		<!-- #ifdef APP-PLUS -->
+		<StatusBar></StatusBar>
+		<!-- #endif -->
 		<view class="header">
 			<view class="left" @click="toggleTop">
 				<view :class="{ active: selectedTab === 'daily' }" data-tag="daily">日榜</view>

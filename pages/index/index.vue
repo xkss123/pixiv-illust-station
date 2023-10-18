@@ -1,5 +1,8 @@
 <template>
 	<view class="content">
+		<!-- #ifdef APP-PLUS -->
+		<StatusBar></StatusBar>
+		<!-- #endif -->
 		<view class="title">
 			推荐作品
 		</view>

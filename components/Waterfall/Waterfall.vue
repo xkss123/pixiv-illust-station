@@ -79,7 +79,7 @@
 	.column{
 		box-sizing: border-box;
 		display: inline-block;
-		width: 50%;
+		width: calc(50% - 10rpx); /* 计算每个 item 的宽度，减去外边距的宽度 */
 		padding: 10rpx;
 		vertical-align: top;
 	}
