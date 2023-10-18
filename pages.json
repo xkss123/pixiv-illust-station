@@ -46,6 +46,15 @@
             }
             
         }
+        ,{
+            "path" : "pages/user/wxAvatar/wxAvatar",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "个人中心",
+                "enablePullDownRefresh": false
+            }
+            
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",

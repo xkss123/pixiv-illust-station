@@ -1,6 +1,7 @@
 <template>
 	<view>
-		<button @click="login">登录</button>
+		<button @click="login" v-if="!isLogin">登录</button>
+		<!-- TODO:微信头像和用户名 -->
 	</view>
 </template>
 
@@ -8,8 +9,23 @@
 	export default {
 		data() {
 			return {
-
+				isLogin:false
 			};
+		},
+		onShow() {
+			uni.getStorage({
+				key:'userInfo',
+				success:(res)=> {
+					console.log('res');
+					console.log(JSON.parse(res.data));
+					this.isLogin=true
+				},
+				fail:(err)=> {
+					console.log('err');
+					console.log(err);
+					this.isLogin=false
+				}
+			})
 		},
 		methods: {
 			login() {
@@ -36,14 +52,8 @@
 				// #endif
 				// #ifdef MP-WEIXIN
 				// TODO:因为微信小程序把API收回了只能返回默认头像和“微信用户”
-				uni.getUserProfile({
-					desc: 'Wexin', // 这个参数是必须的
-					success: res => {
-						console.log(res)
-					},
-					fail: err => {
-						console.log(err)
-					}
+				uni.navigateTo({
+					url:'/pages/user/wxAvatar/wxAvatar'
 				})
 				// #endif
 			}
