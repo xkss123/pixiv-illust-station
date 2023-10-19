@@ -50,13 +50,13 @@
             "sdkConfigs" : {
                 "share" : {
                     "weixin" : {
-                        "appid" : "wxd53e0a6f13133f07",
+                        "appid" : "换成自己的appid",
                         "UniversalLinks" : ""
                     }
                 },
                 "oauth" : {
                     "weixin" : {
-                        "appid" : "wxd53e0a6f13133f07",
+                        "appid" : "换成自己的appid",
                         "UniversalLinks" : ""
                     }
                 }
@@ -67,7 +67,7 @@
     "quickapp" : {},
     /* 小程序特有相关 */
     "mp-weixin" : {
-        "appid" : "wxd53e0a6f13133f07",
+        "appid" : "换成自己的appid",
         "setting" : {
             "urlCheck" : false
         },
