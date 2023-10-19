@@ -9,6 +9,7 @@
 		<view class="main">
 			<Waterfall :list="showList"></Waterfall>
 		</view>
+		<NoData v-if="!showList.length"></NoData>
 		<Divder></Divder>
 	</view>
 </template>

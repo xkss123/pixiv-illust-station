@@ -8,6 +8,7 @@
 		</view>
 		<view class="main">
 			<Waterfall :list="newestList"></Waterfall>
+			<NoData v-if="!newestList.length"></NoData>
 			<Divder></Divder>
 		</view>
 	</view>

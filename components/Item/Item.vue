@@ -9,7 +9,7 @@
 			fade-show="true" 
 			></image>
 		<text>{{item.title||'无题'}}</text>
-		<text class="author iconfont ">{{item.like_total}}</text>
+		<text class="link iconfont ">{{item.like_total}}</text>
 		<!-- TODO: 找到合适的icon图标添加进去 -->
 	</view>
 </template>
@@ -43,6 +43,7 @@
 		border: 2rpx solid #ccc;
 		margin: 5rpx;
 		width: 100%; /* 计算每个 item 的宽度，减去外边距的宽度 */
+		overflow: hidden;
 		image{
 			width: 100%;
 		}
@@ -52,7 +53,7 @@
 			text-overflow: ellipsis; /* 使用省略号 */
 			white-space: nowrap; /* 禁止换行 */
 		}
-		.author{
+		.link{
 			color: #ccc;
 			/* #ifdef APP-PLUS || MP-WEIXIN */
 			font-size: 25rpx;

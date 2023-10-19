@@ -1,13 +1,14 @@
 <template>
 	<view>
-		
 		<view class="header">
+			<!-- #ifdef APP-PLUS || MP-WEIXIN -->
 			<button @click="login" v-if="!isLogin">登录</button>
 			<!-- TODO:微信头像和用户名 -->
 			<view class="userInfo" v-else>
 				<image :src="src" mode="widthFix"></image>
 				<p>{{nickName}}</p>
 			</view>
+			<!-- #endif -->
 		</view>
 		<view class="main" @click="handlerClick">
 			<view class="item" id="item" data-name="favorite">
@@ -38,6 +39,7 @@
 				</view>
 				<text class="iconfont icon-youjiantou right"></text>
 			</view>
+			<!-- #ifdef APP-PLUS || MP-WEIXIN -->
 			<view class="item" id="item" data-name="logout">
 				<view class="left">
 					<text class="iconfont icon-tuichudenglu"></text>
@@ -45,6 +47,7 @@
 				</view>
 				<text class="iconfont icon-youjiantou right"></text>
 			</view>
+			<!-- #endif -->
 		</view>
 	</view>
 </template>

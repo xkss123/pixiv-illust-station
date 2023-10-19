@@ -1,6 +1,6 @@
 <template>
 	<view>
-		<!-- #ifdef APP-PLUS -->
+		<!-- #ifdef APP-PLUS || MP-WEIXIN -->
 		<StatusBar></StatusBar>
 		<!-- #endif -->
 		<!-- #ifdef APP-PLUS || H5-->
@@ -67,7 +67,7 @@
 			
 			console.log(this.option);
 			console.log(this.src);
-			this.title=this.option.title ||'默认标题'
+			this.title=this.option.title ||'无题'
 			// uni.removeStorage({
 			// 	key:'favoriteList'
 			// })

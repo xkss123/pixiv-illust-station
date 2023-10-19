@@ -15,12 +15,13 @@
 				<view class="rank">
 					#{{index+1}}
 				</view>
-				<image :src="item.original_url" mode="aspectFill" lazy-load></image>
-				<!-- <LoadingToggle :imgSrc="item.original_url"  mode="aspectFill"></LoadingToggle> -->
-				<text class="title">{{item.title}}</text>
+				<!-- <image :src="item.original_url" mode="aspectFill" lazy-load></image> -->
+				<LoadingToggle :imgSrc="item.original_url"  mode="aspectFill" height="400rpx" flag="1"></LoadingToggle>
+				<text class="title">{{item.title||'无题'}}</text>
 				<text class="like iconfont">{{item.like_total}}</text>
 			</view>
 		</view>
+		<NoData v-if="!dataList.length"></NoData>
 		<Divder></Divder>
 	</view>
 </template>
@@ -108,6 +109,7 @@
 			border-radius: 4px;
 			margin-bottom: 15rpx;
 			box-sizing: border-box;
+			overflow: hidden;
 			.rank {
 				text-align: center;
 				position: absolute;
@@ -133,6 +135,9 @@
 				font-size: 30rpx;
 				color: #333333;
 				line-height: 46rpx;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+				overflow: hidden;
 			}
 	
 			.like {

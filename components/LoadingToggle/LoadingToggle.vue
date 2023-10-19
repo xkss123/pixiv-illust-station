@@ -3,7 +3,7 @@
 		<image src="@/static/images/loading.gif" mode="widthFix"
 			v-show="isLoding=='0'"></image>
 		<image @click="previewImage" :src="imgSrc" @load="isLoding='1'" :mode="mode" v-show="isLoding=='1'" lazy-load="true"
-			fade-show="true" @error="changeImg" :style="{height}"></image>
+			fade-show="true" @error="changeImg" :style="{height:height}"></image>
 	</view>
 </template>
 
@@ -21,6 +21,10 @@
 			mode:{
 				type:String,
 				default:'widthFix'
+			},
+			flag:{
+				type:String,
+				default:0
 			}
 		},
 		data() {
@@ -33,6 +37,7 @@
 				this.$emit('replaceSrc',this.imgSrc)
 			},
 			previewImage() {
+				if(this.flag) return
 				uni.previewImage({
 					urls: [this.imgSrc]
 				});
